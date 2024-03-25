@@ -3,6 +3,7 @@
     "subTitle":"Land Beyond Sanity",
     "avatarUrl":"https://jinsanity07git.github.io/UWMnotebook/src/svg/Mark_RGB_Yellow.svg",
     "GMEEK_VERSION":"last",
+    "startSite":"03/25/2024",
     "dayTheme":"dark_colorblind",
     "nightTheme":"dark_colorblind",
     "script":"<script async src='https://www.googletagmanager.com/gtag/js?id=G-2F8H0XZ7WF'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-2F8H0XZ7WF');</script>"
