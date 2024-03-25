@@ -5,7 +5,7 @@
     "GMEEK_VERSION":"last",
     "i18n":"EN",
     "startSite":"03/25/2024",
-    "singlePage":['about'],
+    "singlePage":["about"],
     "dayTheme":"dark_colorblind",
     "nightTheme":"dark_colorblind",
     "style":"<style>#postBody{font-size:20px}</style>",
