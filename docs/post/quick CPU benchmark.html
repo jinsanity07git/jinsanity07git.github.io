@@ -14,7 +14,7 @@
     
 <meta name="description" content="quick CPU benchmark">
 <title>quick CPU benchmark</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 </head>
 <style>
@@ -70,7 +70,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><code class="notranslate">cpu-benchmark&gt;python cpu-benchmark.py</code></p></div>
+<div class="markdown-body" id="postBody"><ul>
+<li><a href="https://github.com/alexdedyura/cpu-benchmark">https://github.com/alexdedyura/cpu-benchmark</a></li>
+</ul>
+<p><code class="notranslate">cpu-benchmark&gt;python cpu-benchmark.py</code></p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">git clone https://github.com/alexdedyura/cpu-benchmark
+<span class="pl-c1">cd</span> cpu-benchmark</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
 <div class="comments" id="comments"></div>
@@ -128,7 +133,11 @@ console.log("\n %c Gmeek last %c https://github.com/Meekdai/Gmeek \n\n", "color:
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 
 function openComments(){
     cm=document.getElementById("comments");
