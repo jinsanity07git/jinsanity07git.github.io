@@ -55,8 +55,35 @@ The terms `AMD64`, `x86_64`, and `aarch64` refer to different CPU architectures,
 - **Performance vs. Power Efficiency**: AMD64/x86_64 architectures typically focus more on performance and are used in high-power computing environments. In contrast, aarch64 architectures prioritize power efficiency, which is crucial for battery-powered devices.
 - **Market Adoption**: x86_64 is dominant in the PC and server market, whereas aarch64 has a stronghold in the mobile and emerging server and desktop markets, especially with the growth of IoT and edge computing.
 
+### arm64e
+
+The term `arm64e` refers to an enhanced version of the `arm64` architecture, specifically implemented by Apple to support new security and performance features on its platforms. Here’s a detailed look at what `arm64e` entails:
+
+1. Origin
+
+   - **Developer**: `arm64e` was developed by Apple as an evolution of the standard ARM64 (also known as ARMv8-A) architecture.
+
+   - **Purpose**: The primary motivation behind `arm64e` was to **increase the security of software** running on Apple devices, especially to protect against exploits that manipulate code execution flow.
+
+   - **Introduction**: Apple introduced `arm64e` with the release of the A12 Bionic chipset, which first appeared in the iPhone XS, XS Max, and XR in 2018.
+
+2. Design
+
+   - **Pointer Authentication**: The standout feature of `arm64e` is Pointer Authentication, which adds a **cryptographic signature** to pointers, verifying their integrity before use. This mechanism significantly reduces the risk of common security threats such as **return-oriented programming (ROP)** and **jump-oriented programming (JOP)** attacks.
+
+   - **Architecture Improvements**: While maintaining a strong backward compatibility with ARMv8-A, `arm64e` incorporates changes at the instruction set level to support the generation and verification of pointer signatures.
+
+   - **Security Focus**: The enhancements in `arm64e` are geared towards hardening Apple devices **against exploits** by making unauthorized code execution more challenging and thereby bolstering overall system security.
+
+3. Compatibility
+
+   - **Backward Compatibility**: `arm64e` is designed to be backward compatible with the `arm64` architecture. Applications compiled for `arm64` can run on systems supporting `arm64e` without modifications, although they won't benefit from the new security features unless recompiled with `arm64e` support.
+
+   - **Development Environment**: Developers aiming to utilize `arm64e` features need to use Apple's Xcode and compile their applications specifically for `arm64e`. This ensures that the new security enhancements are properly implemented in their applications.
+
+   - **Device Support**: `arm64e` is supported on Apple devices with the A12 chipset and later. This includes not only iPhones but also iPads and potentially other future Apple devices as the company continues to deploy this architecture in its new hardware.
+
 
 
 [^1]: [Apple silicon: Comparison of A series processors](https://en.wikipedia.org/wiki/Apple_silicon#Comparison%20of%20A%20series%20processors) 
 [^2]: [Application ARM-based chips](https://en.wikipedia.org/wiki/ARM_Cortex-A53#External%20links)
-

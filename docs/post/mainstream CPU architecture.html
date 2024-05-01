@@ -81,7 +81,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <ul>
 <li><strong>Developer</strong>: ARM Holdings licenses the architecture to various companies, which then design their own processors that comply with the ARM specifications.</li>
 <li><strong>Characteristics</strong>: ARM architectures are based on reduced instruction set computing (RISC), focusing on efficiency and low power consumption.</li>
-<li><strong>Usage</strong>: ARM is extensively used in <strong>mobile devices</strong><sup><a href="#user-content-fn-1-98a1963627e14fa25518818876d9dfcf" id="user-content-fnref-1-98a1963627e14fa25518818876d9dfcf" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> such as smartphones and tablets due to its power efficiency. It's also increasingly found in other areas such as <strong>servers</strong><sup><a href="#user-content-fn-2-98a1963627e14fa25518818876d9dfcf" id="user-content-fnref-2-98a1963627e14fa25518818876d9dfcf" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup> (due to energy efficiency), <strong>embedded systems, IoT devices</strong>, and even desktops and laptops, with Apple's transition to its own <strong>ARM-based M1</strong> and subsequent chips in the Mac lineup.</li>
+<li><strong>Usage</strong>: ARM is extensively used in <strong>mobile devices</strong><sup><a href="#user-content-fn-1-8b267a1e0837e3eac71b0780f1d469ae" id="user-content-fnref-1-8b267a1e0837e3eac71b0780f1d469ae" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> such as smartphones and tablets due to its power efficiency. It's also increasingly found in other areas such as <strong>servers</strong><sup><a href="#user-content-fn-2-8b267a1e0837e3eac71b0780f1d469ae" id="user-content-fnref-2-8b267a1e0837e3eac71b0780f1d469ae" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup> (due to energy efficiency), <strong>embedded systems, IoT devices</strong>, and even desktops and laptops, with Apple's transition to its own <strong>ARM-based M1</strong> and subsequent chips in the Mac lineup.</li>
 </ul>
 <p>The terms <code class="notranslate">AMD64</code>, <code class="notranslate">x86_64</code>, and <code class="notranslate">aarch64</code> refer to different CPU architectures, each with distinct characteristics and intended uses. Here's a breakdown of each:</p>
 <h3>AMD64 and x86_64</h3>
@@ -132,13 +132,59 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><strong>Performance vs. Power Efficiency</strong>: AMD64/x86_64 architectures typically focus more on performance and are used in high-power computing environments. In contrast, aarch64 architectures prioritize power efficiency, which is crucial for battery-powered devices.</li>
 <li><strong>Market Adoption</strong>: x86_64 is dominant in the PC and server market, whereas aarch64 has a stronghold in the mobile and emerging server and desktop markets, especially with the growth of IoT and edge computing.</li>
 </ul>
+<h3>arm64e</h3>
+<p>The term <code class="notranslate">arm64e</code> refers to an enhanced version of the <code class="notranslate">arm64</code> architecture, specifically implemented by Apple to support new security and performance features on its platforms. Here’s a detailed look at what <code class="notranslate">arm64e</code> entails:</p>
+<ol>
+<li>
+<p>Origin</p>
+<ul>
+<li>
+<p><strong>Developer</strong>: <code class="notranslate">arm64e</code> was developed by Apple as an evolution of the standard ARM64 (also known as ARMv8-A) architecture.</p>
+</li>
+<li>
+<p><strong>Purpose</strong>: The primary motivation behind <code class="notranslate">arm64e</code> was to <strong>increase the security of software</strong> running on Apple devices, especially to protect against exploits that manipulate code execution flow.</p>
+</li>
+<li>
+<p><strong>Introduction</strong>: Apple introduced <code class="notranslate">arm64e</code> with the release of the A12 Bionic chipset, which first appeared in the iPhone XS, XS Max, and XR in 2018.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Design</p>
+<ul>
+<li>
+<p><strong>Pointer Authentication</strong>: The standout feature of <code class="notranslate">arm64e</code> is Pointer Authentication, which adds a <strong>cryptographic signature</strong> to pointers, verifying their integrity before use. This mechanism significantly reduces the risk of common security threats such as <strong>return-oriented programming (ROP)</strong> and <strong>jump-oriented programming (JOP)</strong> attacks.</p>
+</li>
+<li>
+<p><strong>Architecture Improvements</strong>: While maintaining a strong backward compatibility with ARMv8-A, <code class="notranslate">arm64e</code> incorporates changes at the instruction set level to support the generation and verification of pointer signatures.</p>
+</li>
+<li>
+<p><strong>Security Focus</strong>: The enhancements in <code class="notranslate">arm64e</code> are geared towards hardening Apple devices <strong>against exploits</strong> by making unauthorized code execution more challenging and thereby bolstering overall system security.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Compatibility</p>
+<ul>
+<li>
+<p><strong>Backward Compatibility</strong>: <code class="notranslate">arm64e</code> is designed to be backward compatible with the <code class="notranslate">arm64</code> architecture. Applications compiled for <code class="notranslate">arm64</code> can run on systems supporting <code class="notranslate">arm64e</code> without modifications, although they won't benefit from the new security features unless recompiled with <code class="notranslate">arm64e</code> support.</p>
+</li>
+<li>
+<p><strong>Development Environment</strong>: Developers aiming to utilize <code class="notranslate">arm64e</code> features need to use Apple's Xcode and compile their applications specifically for <code class="notranslate">arm64e</code>. This ensures that the new security enhancements are properly implemented in their applications.</p>
+</li>
+<li>
+<p><strong>Device Support</strong>: <code class="notranslate">arm64e</code> is supported on Apple devices with the A12 chipset and later. This includes not only iPhones but also iPads and potentially other future Apple devices as the company continues to deploy this architecture in its new hardware.</p>
+</li>
+</ul>
+</li>
+</ol>
 <section data-footnotes="" class="footnotes"><h2 id="footnote-label" class="sr-only">Footnotes</h2>
 <ol>
-<li id="user-content-fn-1-98a1963627e14fa25518818876d9dfcf">
-<p><a href="https://en.wikipedia.org/wiki/Apple_silicon#Comparison%20of%20A%20series%20processors">Apple silicon: Comparison of A series processors</a> <a href="#user-content-fnref-1-98a1963627e14fa25518818876d9dfcf" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-1-8b267a1e0837e3eac71b0780f1d469ae">
+<p><a href="https://en.wikipedia.org/wiki/Apple_silicon#Comparison%20of%20A%20series%20processors">Apple silicon: Comparison of A series processors</a> <a href="#user-content-fnref-1-8b267a1e0837e3eac71b0780f1d469ae" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
-<li id="user-content-fn-2-98a1963627e14fa25518818876d9dfcf">
-<p><a href="https://en.wikipedia.org/wiki/ARM_Cortex-A53#External%20links">Application ARM-based chips</a> <a href="#user-content-fnref-2-98a1963627e14fa25518818876d9dfcf" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-2-8b267a1e0837e3eac71b0780f1d469ae">
+<p><a href="https://en.wikipedia.org/wiki/ARM_Cortex-A53#External%20links">Application ARM-based chips</a> <a href="#user-content-fnref-2-8b267a1e0837e3eac71b0780f1d469ae" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
 </li>
 </ol>
 </section></div>
