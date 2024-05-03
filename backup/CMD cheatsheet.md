@@ -1,7 +1,6 @@
 
 
 
-
 ## Actions
 
 * open the current directory: `start .`
@@ -82,106 +81,11 @@ Remove a PATH
   1. Press `Windows Key + R` to open the Run dialog.
   2. Type `rundll32 sysdm.cpl,EditEnvironmentVariables` and press `Enter` or click `OK`.
 
-  
+FAQ:
+ * conda cannot activate env in PowerShell[^3]
 
 ## References
 
 [ ^1 ]:  https://ss64.com/nt/
 [^2]: [ DIR](https://ss64.com/nt/dir.html) Display a list of files and folders • 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[^3]: https://github.com/jinsanity07git/jinsanity07git.github.io/issues/9
