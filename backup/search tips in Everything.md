@@ -60,16 +60,19 @@ This query does the following:
 path:*orac*: Searches for paths that contain the string "orac" anywhere in the path. The asterisks (*) are wildcards that match any sequence of characters, allowing "orac" to appear anywhere within the directory name.
 *.md: Filters the results to only show files with the .md extension, which are Markdown files.
 
+
+Q:
 - To search for all  file name by only providing two keywords : eg. `model_calibration_viz_preprint.docx`
+A:
 
 ```bash  
 calib pre
 ```
-
 This query does the following: the space refers to AND operator[^2]
 
 
 ## References
 
 [^1]: [[everything search Syntax](https://www.voidtools.com/support/everything/searching/)](https://www.voidtools.com/support/everything/searching/)
-[^ 2]: https://www.voidtools.com/support/everything/searching/#advanced_search
+
+[^2]: https://www.voidtools.com/support/everything/searching/#advanced_search
