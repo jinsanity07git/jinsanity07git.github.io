@@ -63,7 +63,11 @@ jobs:
           git commit -a -m '🎉auto update by Gmeek action' || echo "nothing to commit"
           git push || echo "nothing to push"
           sleep 3
-          
+                
+      - name: Copy files folder
+        run: |
+          cp -r ${{ github.workspace }}/files ${{ github.workspace }}/docs/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
