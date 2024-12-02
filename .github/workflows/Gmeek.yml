@@ -66,7 +66,7 @@ jobs:
                 
       - name: Copy files folder
         run: |
-          cp -r ${{ github.workspace }}/files ${{ github.workspace }}/docs/
+          cp -r ${{ github.workspace }}/files docs/.
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
